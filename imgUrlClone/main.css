@@ -1,0 +1,160 @@
+body{
+    background-color: #2e3035;
+    font-family: sans-serif;
+}
+body input,button:hover{
+    cursor: pointer;
+   
+}
+#topdiv{
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    width:101.5%;
+    height: 400px;
+    margin-left: -8px;
+    margin-top: -8px;
+    
+}
+#navbar{
+    padding-top: 12px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+#logo{
+    display: flex;
+}
+#logo img{
+    width:50px;
+    height: 20px;
+}
+.inputSearch{
+    margin-left: 10%;
+    padding: 5px;
+    width:35%;
+    border-radius: 5px;
+    background-color: #454469;
+    border: none;
+    color: white;
+}
+
+.abe {
+    font-size: 60px;
+    color: white;
+    margin-top: 9px;
+    margin-left: -90px;
+  }
+
+  .abe:hover{
+      cursor: pointer;
+  }
+  
+.buttonPost{
+    background-color:#1bb76e;
+    
+    border-radius: 3px;
+    width:150px;
+    display: flex;
+    margin-left: 1%;
+    justify-content:space-evenly;
+    
+}
+.buttonPost button{
+    border:none;
+    background-color: #1bb76e;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.buttonPost .logoimg{
+    margin-top: 10px;
+    width: 40px;
+}
+
+.ad{
+    border:none;
+    background-color: #6432F9;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 3px;
+    margin-right: 20px;
+    width: 100px;   
+}
+
+.signin{
+    border:none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    justify-content: center; 
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.signup{
+    border:none;
+    width: 100px;
+    background-color: #1bb76e;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+#scroll{
+    padding:2% 10% 0 10%;
+    column-width: 13em;
+}
+
+#divName {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 0.3em;
+    height: 10em;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  #divName:nth-child(2n) {
+      height: 15em;
+  }
+  
+  #divName:nth-child(3n) {
+      height: 13em;
+  }
+  
+  #divName:nth-child(4n) {
+      height: 12em;
+  }
+  
+  #divName:nth-child(5n) {
+      height: 17em;
+  }
+  
+  #divName:nth-child(6n) {
+      height: 20em;
+  }
+
+  .para{
+      width: 100%;
+      font-size: 25px;
+      padding-left: 27%;
+      color: #97bad1;
+  }
+  .tags{
+      display: flex;
+      margin-left: 6%;
+  }
+  .tags div{
+      height: 140px;
+      width:8.5%;
+      
+      margin-left: 10px;
+      color:white;
+      border-radius: 3px;
+      
+  }
+  .tags div span{
+      display: block;
+  }
