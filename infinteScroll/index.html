@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div onload="" id ="container"></div>
+</body>
+</html>
+<script >
+    let a = document.getElementById("container");
+
+//     // GET https://api.pexels.com/v1/curated?page=2&per_page=40
+//     // api key =>563492ad6f917000010000010752808c1d6d4bca9c15ddb76bc5f0a1
+    let i = 1;
+
+    function loadImages(){
+
+      fetch(`https://api.pexels.com/v1/curated?page=${i}&per_page=25`, {
+      method: "GET",
+      headers: {
+        "content-type":  "application/json",
+        Authorization :  "563492ad6f917000010000010752808c1d6d4bca9c15ddb76bc5f0a1"
+      }
+    })
+    .then((d) => d.json())
+    .then((data) => {
+       console.log(data.photos)
+       getImg(data.photos)
+      });  
+      i++;
+
+      console.log(i)
+  }
+
+const getImg= (data) =>{
+
+    data.forEach((element) => {
+        let img = document.createElement("img");
+
+        img.classList.add("imgdiv")
+
+        img.src = element.src.original;
+
+        a.appendChild(img);
+    });
+
+}  
+
+loadImages();
+
+window.addEventListener('scroll',()=>{
+    // console.log("scrolled", window.scrollY) //scrolled from top
+    // console.log(window.innerHeight) //visible part of screen
+    if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight){
+        loadImages();
+    }
+})
+
+</script>
+<script>
+  
+
+</script>
